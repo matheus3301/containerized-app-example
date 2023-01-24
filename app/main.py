@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from .src.os_info import get_os_info
-from .src.models import DoubleProductRequest
-from .src.algorithms import calculate_rpp
+from src.os_info import get_os_info
+from src.models import DoubleProductRequest
+from src.algorithms import calculate_rpp
 
 app = FastAPI()
 
