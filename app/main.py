@@ -12,3 +12,9 @@ async def get_info_route():
 @app.post("/processing/calculate-rpp")
 async def calculate_rpp_route(request: DoubleProductRequest):
     return calculate_rpp(request.hr, request.sbp)
+
+@app.get("/")
+async def root():
+    return {
+        "version": "0.1"
+    }
